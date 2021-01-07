@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Ele.vibration"
+             Title="Vibration">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Бзззззз" x:Name="Vibrate" FontSize="Large"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                   TextColor="Black"/>
+            <Button x:Name="btn" Text="Вкл" Clicked="btn_Clicked" Margin="5" HorizontalOptions="Center" BackgroundColor="Green"></Button>
+            <Button x:Name="btn2" Text="Выкл" Clicked="btn2_Clicked" Margin="5" HorizontalOptions="Center" BackgroundColor="Red"></Button>
+            <Image Source="vibr.gif" IsAnimationPlaying="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"></Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
